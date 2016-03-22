@@ -10,7 +10,7 @@ var app = angular.module('vagasApp', []);
 
 // Controller
 app.controller('MainController', function($scope,$http) {
-	var url = "https://cdn.rawgit.com/amanuel2/Collabs/master/list.json"
+	var url = "https://cdn.rawgit.com/paulogabriel/angularjs-jobboard/master/js/list.json"
     $http.get(url).success(function (response) {
        $scope.apps = response;
     });

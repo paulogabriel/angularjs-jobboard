@@ -24,9 +24,12 @@
 		<div class="row" ng-controller="MainController">
 			<div class="col-sm-6">
 				<div class="card" ng-repeat="app in apps">
-					<h3>{{app.title}}</h3>
-					<p>{{app.author}}</p>
-					<p>{{app.url}}</p>
+					<h3>{{app.job}}</h3>
+					<h4>{{app.type}}</h4>
+					<ul>
+						<li>{{app.company}}</li>
+						<li>{{app.city}}</li>
+					</ul>
 				</div>
 			</div>
 		</div>
