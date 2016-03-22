@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>An AngularJS Job Board</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+	<script src="js/angular.min.js"></script>
+	<!-- // <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script> -->
+</head>
+  
+<body ng-app="vagasApp">
+	<header>
+		<h1>JobBoard</h1>
+		<a href="post-job.html">Post a job</a>
+	</header>
+	
+	<div class="main container-fluid">		
+		<div class="row" ng-controller="MainController">
+			<div class="col-sm-6">
+				<div class="card" ng-repeat="app in apps">
+					<h3>{{app.title}}</h3>
+					<p>{{app.author}}</p>
+					<p>{{app.url}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- // <script src="js/jquery-1.12.1.min.js"></script> -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
