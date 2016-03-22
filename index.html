@@ -23,14 +23,18 @@
 	<div class="main container-fluid">		
 		<div class="row" ng-controller="MainController">
 			<div class="col-sm-6">
-				<div class="card" ng-repeat="app in apps">
-					<h3>{{app.job}}</h3>
-					<h4>{{app.type}}</h4>
-					<ul>
-						<li>{{app.company}}</li>
-						<li>{{app.city}}</li>
-					</ul>
+				
+				<div class="card panel panel-default" ng-repeat="app in apps">
+					<div class="panel-body">
+						<h3 class="panel-title">{{app.job}}</h3>
+						<h5>{{app.type}}</h5>
+						<ul>
+							<li>{{app.company}}</li>
+							<li>{{app.city}}</li>
+						</ul>
+					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>

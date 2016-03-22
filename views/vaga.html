@@ -1,13 +1,38 @@
-<div class="main">
-	<div class="container">
-		<h2>Página de detalhe</h2>
-		<!-- <div class="vaga-item">
-			<div class="container">
-				<h2 class="vaga-vaga">{{ detail.vaga }}</h2>
-				<p class="vaga-cidade">{{ detail.cidade }}</p>
-				<p class="vaga-tipo">{{ detail.tipo }}</p>
-			</div>
-		</div> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<title>An AngularJS Job Board</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+	<script src="js/angular.min.js"></script>
+	<!-- // <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script> -->
+</head>
+  
+<body ng-app="vagasApp">
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<h3 class="panel-title">{{app.job}}</h3>
+			<h5>@ {{app.company}}</h5>
+
+			<ul>
+				<li>{{app.type}}</li>
+				<li>{{app.city}}</li>
+			</ul>
+		
+			<p>{{ app.description }}</p>
+		</div>
 	</div>
-</div>
+
+	<!-- // <script src="js/jquery-1.12.1.min.js"></script> -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
