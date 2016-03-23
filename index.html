@@ -11,7 +11,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	
 	<script src="js/angular.min.js"></script>
-	<!-- // <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script> -->
+	<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
 </head>
   
 <body ng-app="vagasApp">
@@ -20,11 +20,13 @@
 		<a href="post-job.html">Post a job</a>
 	</header>
 	
-	<div class="main container-fluid">		
-		<div class="row" ng-controller="MainController">
+	<div ng-view></div>
+	
+	<!-- <div class="main container-fluid">
+		<div class="row" ng-controller="HomeController">
 			<div class="col-sm-6">
-				
-				<div class="card panel panel-default" ng-repeat="app in apps">
+
+				<div class="card panel panel-default" ng-repeat="app in vagas">
 					<div class="panel-body">
 						<h3 class="panel-title">{{app.job}}</h3>
 						<h5>{{app.type}}</h5>
@@ -34,12 +36,12 @@
 						</ul>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
-	</div>
+	</div> -->
 
-	<!-- // <script src="js/jquery-1.12.1.min.js"></script> -->
+	<script src="js/jquery-1.12.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 
