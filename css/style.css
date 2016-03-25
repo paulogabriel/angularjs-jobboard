@@ -1,0 +1,108 @@
+/* @override 
+	https://paulogabriel.me/extranet/labs/angularjs-jobboard/css/style.css */
+	
+/*Header*/	
+header{
+	margin: 0 auto;
+}
+header,
+.main{
+	width: 90%;
+	padding: 0 5%;
+}
+.clear{
+	float: left;
+	width: 100%;
+	margin: 30px 0;
+}
+h1{
+	float: left;
+	margin: 0;
+}
+h1 a{
+	color: #333;
+}
+nav{
+	float: right;
+}
+nav li{
+	float: left;
+}
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+header .group{
+	position: relative;
+	margin: 0 10px 0 0;
+}
+header .group input{
+	padding-right: 30px;
+}
+header .group span{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+header .btn{
+	float: right;
+}
+
+/*Home*/
+.main{
+	clear: both;
+}
+.main .card:hover{
+	border: 1px solid #337ab7;
+}
+.main a.panel-body{
+	padding: 0;
+	color: #333;
+	width: 100%;
+}
+.main a.panel-body:hover{
+	text-decoration: none;
+}
+.main .card .inner{
+	float: left;
+	width: 100%;
+	padding: 15px 2%;
+}
+.main h3{
+	float: left;
+	position: relative;
+	font-size: 1.6em;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.main a.panel-body:hover h3{
+	color: #337ab7;
+}
+.main .card ul{
+	float: left;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+.main .card ul li{
+	float: left;
+	margin: 0 20px 0 0;
+}
+.main .card ul li:first-child{
+	color: #4cae4c;
+}
+.main .card ul li:nth-child(2){
+	color: #46b8da;
+}
+.main .card ul li:last-child{
+	color: #eea236;
+}
+.main .card ul li span{
+	margin: 0 7px 0 0;
+}
+
+/*Job*/
+.vaga{
+	
+}

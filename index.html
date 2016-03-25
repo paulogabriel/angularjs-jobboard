@@ -15,32 +15,26 @@
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
   
-<body ng-app="vagasApp">
+<body ng-app="jobboardApp">
 	<header>
-		<h1><a href="https://paulogabriel.me/extranet/labs/angularjs-jobboard/">JobBoard</a></h1>
-		<a href="https://paulogabriel.me/extranet/labs/angularjs-jobboard/post-job.html">Post a job</a>
+		<div class="clear">
+			<h1><a href="https://paulogabriel.me/extranet/labs/angularjs-jobboard/#/">JobBoard</a></h1>
+			<nav>
+				<ul>
+					<li>
+						<div class="group">
+							<input type="text" class="form-control search" ng-model="query" placeholder="Search for...">
+							<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						</div>
+					</li>
+					<li><a href="https://paulogabriel.me/extranet/labs/angularjs-jobboard/post-job.html" class="btn btn-primary">Post a job</a></li>
+				</ul>
+			
+			</nav>
+		</div>
 	</header>
 	
 	<div ng-view></div>
-	
-	<!-- <div class="main container-fluid">
-		<div class="row" ng-controller="HomeController">
-			<div class="col-sm-6">
-
-				<div class="card panel panel-default" ng-repeat="app in vagas">
-					<div class="panel-body">
-						<h3 class="panel-title">{{app.job}}</h3>
-						<h5>{{app.type}}</h5>
-						<ul>
-							<li>{{app.company}}</li>
-							<li>{{app.city}}</li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div> -->
 
 	<script src="js/jquery-1.12.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

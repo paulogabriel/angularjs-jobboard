@@ -1,22 +1,22 @@
 // App
-var app = angular.module('vagasApp', ['ngRoute']);
+var app = angular.module('jobboardApp', ['ngRoute']);
 
 // Controllers
-app.controller('HomeController', ['$scope', 'vagas', function($scope, vagas) {
-  vagas.success(function(data) {
-    $scope.vagas = data;
+app.controller('HomeController', ['$scope', 'openings', function($scope, openings) {
+  openings.success(function(data) {
+    $scope.openings = data;
   });
 }]);
 
 
-app.controller('VagaController', ['$scope', 'vagas', '$routeParams', function($scope, vagas, $routeParams) {
-  vagas.success(function(data) {
+app.controller('JobController', ['$scope', 'openings', '$routeParams', function($scope, openings, $routeParams) {
+  openings.success(function(data) {
     $scope.detail = data[$routeParams.id];
   });
 }]);
 
 // Services
-app.service('vagas', ['$http', function($http) {
+app.service('openings', ['$http', function($http) {
 	return $http.get('js/list.json')
 	.success(function(data) {
 		return data;
@@ -41,9 +41,9 @@ app.config(function ($routeProvider) {
     	controller: 'HomeController',
     	templateUrl: 'views/home.html'
   	})
-  	.when('/vagas/:id',{
-    	controller: 'VagaController',
-    	templateUrl: 'views/vaga.html'
+  	.when('/job/:id',{
+    	controller: 'JobController',
+    	templateUrl: 'views/opening.html'
   	})
   	.otherwise({
   		redirectTo: '/'
