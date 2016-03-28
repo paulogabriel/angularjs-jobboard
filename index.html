@@ -20,27 +20,37 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-				<h1>
-					<a href="#/">JobBoard</a>
-					<span>An AngularJS job board</span>
-				</h1>
-				<nav>
-					<ul>
-						<li>
-							<div class="group">
-								<input type="text" class="form-control search" ng-model="query" placeholder="Keyword Search">
-								<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-							</div>
-						</li>
-						<li><a href="https://paulogabriel.me/extranet/labs/angularjs-jobboard/post-job" class="btn btn-primary">Post a job</a></li>
-					</ul>
-				</nav>
+					<h1>
+						<a href="#/">JobBoard</a>
+						<span>An AngularJS job board</span>
+					</h1>
+					<nav>
+						<ul>
+							<li>
+								<div class="group">
+									<input type="text" class="form-control search" ng-model="query" placeholder="Keyword Search">
+									<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+								</div>
+							</li>
+							<li><a href="https://paulogabriel.me/extranet/labs/angularjs-jobboard/post-job" class="btn btn-primary">Post a job</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
 	</header>
 	
 	<div ng-view></div>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p><span class="glyphicon glyphicon-eye-open"></span>View it at <a href="https://github.com/paulogabriel/angularjs-jobboard.git" target="_blank">Github</a>.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<script src="js/jquery-1.12.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

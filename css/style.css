@@ -139,6 +139,15 @@ form .bottom{
 	margin-top: 20px;
 }
 
+/*Footer*/
+footer p{
+	text-align: center;
+	margin: 0;
+}
+footer p span{
+	margin-right: 7px;
+}
+
 /*Queries*/
 @media screen and (max-width: 514px){
 	h1{
