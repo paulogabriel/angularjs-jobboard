@@ -15,11 +15,11 @@
 </head>
   
 <body>
-	<div class="container-fluid">
-		<h1>Post your job opening</h1>
-		
+	
+	<div class="main container post-job">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-md-12">
+				<h1>Post your job opening</h1>
 				<form action="saveit.php" method="POST" onSubmit="window.location.reload()">
 					<div class="form-group" id="job-group">
 						<label for="job">Job</label>
@@ -55,8 +55,11 @@
 						<textarea class="form-control" name="description" id="description" required></textarea>
 					</div>
 					<div class="g-recaptcha" data-sitekey="6LdswxsTAAAAAED_nI5ZJMaP0-TvKah1fRYYCwcN"></div>
-					<button class="btn btn-primary" type="submit">Send</button>
-					<a class="btn btn-primary" href="https://paulogabriel.me/extranet/labs/angularjs-jobboard/">Cancel</a>
+					
+					<div class="bottom">
+						<button class="btn btn-success" type="submit">Send</button>
+						<a class="btn btn-danger" href=".#/">Cancel</a>
+					</div>
 				</form>
 			</div>
 		</div>

@@ -3,14 +3,14 @@
 	
 /*Header*/	
 header{
-	margin: 0 auto;
+	margin: 30px 0;
 }
-header,
 .main{
 	width: 90%;
 	padding: 0 5%;
 }
-.clear{
+.clear,
+.post-job h1{
 	float: left;
 	width: 100%;
 	margin: 30px 0;
@@ -18,9 +18,15 @@ header,
 h1{
 	float: left;
 	margin: 0;
+	text-align: right;
 }
 h1 a{
 	color: #333;
+}
+h1 span{
+	font-size: 0.3em;
+	display: block;
+	color: #999;
 }
 nav{
 	float: right;
@@ -52,9 +58,10 @@ header .btn{
 /*Home*/
 .main{
 	clear: both;
+	padding-bottom: 50px;
 }
 .main .card:hover{
-	border: 1px solid #337ab7;
+	border: 1px solid #333;
 }
 .main a.panel-body{
 	padding: 0;
@@ -76,33 +83,90 @@ header .btn{
 	width: 100%;
 	margin-bottom: 10px;
 }
-.main a.panel-body:hover h3{
-	color: #337ab7;
-}
-.main .card ul{
+.main .card ul,
+.main .opening ul{
 	float: left;
 	margin: 0;
 	list-style: none;
 	padding: 0;
 }
-.main .card ul li{
+.main .card ul li,
+.main .opening .trio li{
 	float: left;
 	margin: 0 20px 0 0;
 }
-.main .card ul li:first-child{
+.main .card ul li:first-child,
+.main .opening .trio li:first-child{
 	color: #4cae4c;
 }
-.main .card ul li:nth-child(2){
+.main .card ul li:nth-child(2),
+.main .opening .trio li:nth-child(2){
 	color: #46b8da;
 }
-.main .card ul li:last-child{
+.main .card ul li:last-child,
+.main .opening .trio li:last-child{
 	color: #eea236;
 }
-.main .card ul li span{
+.main .card ul li span,
+.main .opening ul li span{
 	margin: 0 7px 0 0;
 }
 
-/*Job*/
-.vaga{
-	
+.main .opening .detail{
+	border-top: 1px solid #ddd;
+	margin-top: 15px;
+	padding-top: 15px;
+	width: 100%;
+}
+.main .opening p{
+	margin: 10px 0 0;
+}
+
+.main a.return{
+	margin-top: 50px;
+	float: left;
+}
+
+/*Form*/
+.post-job h1{
+	text-align: left;
+}
+form{
+	float: left;
+	width: 100%;
+}
+form .bottom{
+	margin-top: 20px;
+}
+
+/*Queries*/
+@media screen and (max-width: 514px){
+	h1{
+		float: none;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	nav,
+	nav li{
+		width: 100%;
+	}
+	nav .group{
+		margin: 0;
+	}
+	nav li:last-child{
+		text-align: center;
+		margin-top: 10px;
+	}
+	nav .btn{
+		float: none;
+		width: 100%;
+		font-size: 1.3em;
+	}
+	.main .card .inner{
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	.main .card .inner li{
+		margin-bottom: 5px;
+	}
 }

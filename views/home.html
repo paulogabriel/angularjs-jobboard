@@ -1,14 +1,18 @@
-<div class="main container-fluid">		
-	<div class="card panel panel-default" ng-repeat="app in openings | filter:query | orderBy:'-time'">
-		<a class="panel-body" href="#/job/{{$index}}">
-			<div class="inner">
-				<h3 class="panel-title">{{app.job}}</h3>
-				<ul>
-					<li><span class="glyphicon glyphicon-tags"></span>{{app.type}}</li>
-					<li><span class="glyphicon glyphicon-briefcase"></span>{{app.company}}</li>
-					<li><span class="glyphicon glyphicon-globe"></span>{{app.city}}</li>
-				</ul>
+<div class="main container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card panel panel-default" ng-repeat="app in openings | filter:query | orderBy:'-time'">
+				<a class="panel-body" href="#/job/{{$index}}">
+					<div class="inner">
+						<h3 class="panel-title">{{app.job}}</h3>
+						<ul>
+							<li><span class="glyphicon glyphicon-tags"></span>{{app.type}}</li>
+							<li><span class="glyphicon glyphicon-briefcase"></span>{{app.company}}</li>
+							<li><span class="glyphicon glyphicon-globe"></span>{{app.city}}</li>
+						</ul>
+					</div>
+				</a>
 			</div>
-		</a>
+		</div>
 	</div>
 </div>

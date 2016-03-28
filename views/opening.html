@@ -1,13 +1,21 @@
-<div class="main container-fluid">
-	<div class="opening">
-		<h6>Posted in {{detail.time | date}}</h6>
-		<h3 class="panel-title">{{ detail.job }}</h3>
-		<h5>@ {{ detail.company}}</h5>
-		<ul>
-			<li>{{ detail.city }}</li>
-			<li>{{ detail.type }}</li>
-		</ul>
-		
-		<p>{{ detail.description }}</p>
+<div class="main container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="opening">
+				<h6>Posted in {{detail.time | date}}</h6>
+				<h3 class="panel-title">{{detail.job}}</h3>
+				<ul class="trio">
+					<li><span class="glyphicon glyphicon-tags"></span>{{detail.type}}</li>
+					<li><span class="glyphicon glyphicon-briefcase"></span>{{detail.company}}</li>
+					<li><span class="glyphicon glyphicon-globe"></span>{{detail.city}}</li>
+				</ul>
+				<ul class="detail">
+					<li><span class="glyphicon glyphicon-exclamation-sign"></span><strong>Description</strong></li>
+					<p>{{ detail.description }}</p>
+				</ul>
+			</div>
+	
+			<a href="#/" class="btn btn-default return">« Home</a>
+		</div>
 	</div>
 </div>
