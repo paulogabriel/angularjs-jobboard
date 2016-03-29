@@ -1,0 +1,22 @@
+{
+  "name": "angularjs-jobboard",
+  "version": "1.0.0",
+  "description": "Trivial static server to host assets (to get around CORS restriction)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Birch-san/mecab-wasm.git"
+  },
+  "author": "",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "git@github.com:Birch-san/angularjs-jobboard.git"
+  },
+  "homepage": "https://github.com/Birch-san/angularjs-jobboard#readme",
+  "dependencies": {
+    "compression": "^1.6.1"
+  }
+}
