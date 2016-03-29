@@ -11,7 +11,11 @@ app.controller('HomeController', ['$scope', 'openings', function($scope, opening
 
 app.controller('JobController', ['$scope', 'openings', '$routeParams', function($scope, openings, $routeParams) {
   openings.success(function(data) {
-    $scope.detail = data[$routeParams.id];
+    var matches = data.filter(function(item) {
+      return item.id === $routeParams.id;
+    });
+    var firstMatch = matches[0];
+    $scope.detail = firstMatch;
   });
 }]);
 
