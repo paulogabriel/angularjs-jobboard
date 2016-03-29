@@ -2,7 +2,9 @@
 
 $filetxt = 'js/list.json';
 
-$current_date = gmDate("Y-m-d\TH:i:s\Z"); 
+$current_date = gmDate("Y-m-d\TH:i:s\Z");
+
+$item_id = sprintf('%04X%04X-%04X-%04X-%04X-%04X%04X%04X', mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(16384, 20479), mt_rand(32768, 49151), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535));
 
 $formdata = array(
 	'job'=> $_POST['job'],
@@ -11,7 +13,8 @@ $formdata = array(
 	'category'=> $_POST['category'],
 	'type'=> $_POST['type'],
 	'description'=> $_POST['description'],
-	'time'=> $current_date
+	'time'=> $current_date,
+	'id'=> $item_id
 );
 
 $arr_data = array();  
@@ -36,7 +39,7 @@ if(intval($responseKeys["success"]) !== 1) {
 	echo '<h2>You are spammer!</h2>';
 } else {
 	file_put_contents('js/list.json', $jsondata);
-	header("location:https://paulogabriel.me/extranet/labs/angularjs-jobboard/");
+	header("location:.#/");
 }
 
 ?>

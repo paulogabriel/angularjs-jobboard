@@ -11,7 +11,11 @@ app.controller('HomeController', ['$scope', 'openings', function($scope, opening
 
 app.controller('JobController', ['$scope', 'openings', '$routeParams', function($scope, openings, $routeParams) {
   openings.success(function(data) {
-    $scope.detail = data[$routeParams.id];
+	  var matches = data.filter(function(item) {
+		  return item.id === $routeParams.id;
+	  });
+	  var firstMatch = matches[0];
+	  $scope.detail = firstMatch;
   });
 }]);
 
@@ -30,8 +34,8 @@ app.service('openings', ['$http', function($http) {
 app.config(function ($routeProvider) {
   $routeProvider
   	.when('/', {
-  	    	controller: 'HomeController',
-  	    	templateUrl: 'views/home.html'
+  	    controller: 'HomeController',
+  	    templateUrl: 'views/home.html'
   	})
   	.when('/post-job', {
     	controller: 'HomeController', // just to keep the pattern
