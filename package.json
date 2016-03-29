@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Birch-san/mecab-wasm.git"
+    "url": "git+https://github.com/Birch-san/angularjs-jobboard.git"
   },
   "author": "",
   "license": "CC-BY-4.0",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Birch-san/angularjs-jobboard#readme",
   "dependencies": {
-    "compression": "^1.6.1"
+    "express": "^4.13.4"
   }
 }
