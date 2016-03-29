@@ -34,8 +34,8 @@ app.service('openings', ['$http', function($http) {
 app.config(function ($routeProvider) {
   $routeProvider
   	.when('/', {
-  	    	controller: 'HomeController',
-  	    	templateUrl: 'views/home.html'
+  	    controller: 'HomeController',
+  	    templateUrl: 'views/home.html'
   	})
   	.when('/post-job', {
     	controller: 'HomeController', // just to keep the pattern
